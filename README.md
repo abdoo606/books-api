@@ -20,3 +20,8 @@ pytest projects/12-books-api -q
 - Bearer auth with constant-time token comparison; admin-only destructive routes
 - Validation lives in Pydantic models, not in hand-written `if` chains
 - Correct status codes: 401 vs 403 vs 404 vs 409 vs 422
+
+## Repository
+- GitHub: https://github.com/{owner}/books-api
+- Python 3.11+ · tests: `pytest` · runtime dependencies: fastapi, uvicorn, httpx
+- Start the service: `uvicorn booksapi.api:create_app --factory --reload`
